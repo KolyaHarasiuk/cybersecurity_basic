@@ -1,0 +1,5 @@
+while read -r domain; do
+    echo "Domain: $domain" >> personal.txt
+    grep -E "Registrant Organization:|Registrant Street:|Registrant Phone:|Registrant Email:|Registrar Abuse Contact Email:|Registrar Abuse Contact Phone:|Updated Date:|Registrant Country:|Registrant State/Province:" whois.txt | awk -F': ' '{if (($1 == "Registrant Email" || $1 == "Registrar Abuse Contact Email") && $2 ~ /Select Request Email Form at/) {$2="No email address"} print}' >> personal.txt
+    echo "-----------------------------" >> personal.txt
+done < targets.txt
