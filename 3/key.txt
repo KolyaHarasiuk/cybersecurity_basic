@@ -1,0 +1,14 @@
+The key fingerprint is:
+SHA256:8t3fXOnCrH1Qqd7gtKdfUdjqlvXPBNr4CgT5oJUoQDc mykey
+The key's randomart image is:
++---[RSA 4096]----+
+| .o E            |
+|   o . . o     o |
+|    . . *     . +|
+|     . o +     +.|
+|      o S o   =..|
+|       o o . X ++|
+|        . o X X.=|
+|           ..@.O+|
+|           .o+Oo=|
++----[SHA256]-----+
