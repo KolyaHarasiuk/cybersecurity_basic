@@ -1,0 +1,12 @@
+id,imdb,genre,title,release_year,tickets_stock,main_character
+1,tt1583421,action,G.I. Joe: Retaliation,2013,100,Cobra Commander
+2,tt0371746,action,Iron Man,2008,53,Tony Stark
+3,tt0770828,action,Man of Steel,2013,78,Clark Kent
+4,tt0438488,sci-fi,Terminator Salvation,2009,100,John Connor
+5,tt0948470,action,The Amazing Spider-Man,2012,13,Peter Parker
+6,tt1259521,horror,The Cabin in the Woods,2011,666,Some zombies
+7,tt1345836,action,The Dark Knight Rises,2012,3,Bruce Wayne
+8,tt0232500,action,The Fast and the Furious,2001,40,Brian O'Connor
+9,tt0800080,action,The Incredible Hulk,2008,23,Bruce Banner
+10,tt0816711,horror,World War Z,2013,0,Gerry Lane
+
