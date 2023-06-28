@@ -1,0 +1,21 @@
+===============================================================
+Gobuster v3.5
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://192.168.207.132
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/kali/Downloads/directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.5
+[+] Timeout:                 10s
+===============================================================
+2023/06/27 01:00:36 Starting gobuster in directory enumeration mode
+===============================================================
+[2K/javascript           (Status: 301) [Size: 323] [--> http://192.168.207.132/javascript/]
+[2K/phpmyadmin           (Status: 301) [Size: 323] [--> http://192.168.207.132/phpmyadmin/]
+[2K/server-status        (Status: 403) [Size: 280]
+
+===============================================================
+2023/06/27 01:33:47 Finished
+===============================================================
